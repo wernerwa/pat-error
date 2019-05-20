@@ -119,7 +119,7 @@ class patErrorManager
 	*/
 	function &raiseError( $code, $msg, $info = null )
 	{
-		$error =& patErrorManager::raise( E_ERROR, $code, $msg, $info );
+		$error = patErrorManager::raise( E_ERROR, $code, $msg, $info );
 		return $error;
 	}
 	
@@ -138,7 +138,7 @@ class patErrorManager
 	*/
 	function &raiseWarning( $code, $msg, $info = null )
 	{
-		$error =& patErrorManager::raise( E_WARNING, $code, $msg, $info );
+		$error = patErrorManager::raise( E_WARNING, $code, $msg, $info );
 		return $error;
 	}
 	
@@ -157,7 +157,7 @@ class patErrorManager
 	*/
 	function &raiseNotice( $code, $msg, $info = null )
 	{
-		$error =& patErrorManager::raise( E_NOTICE, $code, $msg, $info );
+		$error = patErrorManager::raise( E_NOTICE, $code, $msg, $info );
 		return $error;
 	}
 	
@@ -191,7 +191,7 @@ class patErrorManager
 		}
 		
 		// build error object
-		$error			=&	new	$class( $level, $code, $msg, $info );
+		$error			=	new	$class( $level, $code, $msg, $info );
 
 		// this error was expected
 		if( !empty( $GLOBALS['_pat_errorExpects'] ) )

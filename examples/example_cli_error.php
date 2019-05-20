@@ -21,7 +21,7 @@
 	 * patErrorManagerDebug - just an example
 	 */
  	include_once 'patErrorHandlerDebug.php';
-	$errorHandler	=&	new	patErrorHandlerDebug;
+	$errorHandler	=	new	patErrorHandlerDebug;
 	
 	// setup handler for each error-level
 	patErrorManager::setErrorHandling( E_ERROR, 'die' );
