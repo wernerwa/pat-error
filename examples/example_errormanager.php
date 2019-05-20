@@ -4,38 +4,38 @@
  *
  * This example demonstrates how to set the error handling for
  * different error levels.
- * 
+ *
  * $Id: example_errormanager.php 21 2004-04-17 20:27:33Z schst $
  *
- * @access		public
- * @package		patError
- * @subpackage	Examples
- * @author		Stephan Schmidt <argh@php-tools.net>
- * @license		LGPL, see license.txt for details
- * @link		http://www.php-tools.net
+ * @access      public
+ * @package     patError
+ * @subpackage  Examples
+ * @author      Stephan Schmidt <argh@php-tools.net>
+ * @license     LGPL, see license.txt for details
+ * @link        http://www.php-tools.net
  */
-	/**
-	 * patErrorManager class
-	 */
-	include( '../patErrorManager.php' );
+    /**
+     * patErrorManager class
+     */
+    include('../patErrorManager.php');
 
-	patErrorManager::setErrorHandling( E_ALL, 'die' );
+    patErrorManager::setErrorHandling(E_ALL, 'die');
 
-	echo	'<pre>';
-	print_r( $GLOBALS['_pat_errorHandling'] );
-	echo	'</pre>';
+    echo    '<pre>';
+    print_r($GLOBALS['_pat_errorHandling']);
+    echo    '</pre>';
 
-	patErrorManager::setErrorHandling( E_NOTICE | E_WARNING, 'echo' );
+    patErrorManager::setErrorHandling(E_NOTICE | E_WARNING, 'echo');
 
-	echo	'<pre>';
-	print_r( $GLOBALS['_pat_errorHandling'] );
-	echo	'</pre>';
+    echo    '<pre>';
+    print_r($GLOBALS['_pat_errorHandling']);
+    echo    '</pre>';
 
-	patErrorManager::setErrorHandling( E_ALL ^ E_NOTICE, 'verbose' );
+    patErrorManager::setErrorHandling(E_ALL ^ E_NOTICE, 'verbose');
 
-	echo	'<pre>';
-	print_r( $GLOBALS['_pat_errorHandling'] );
-	echo	'</pre>';
+    echo    '<pre>';
+    print_r($GLOBALS['_pat_errorHandling']);
+    echo    '</pre>';
 ?>
 </body>
 </html>

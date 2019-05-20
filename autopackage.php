@@ -8,23 +8,23 @@
  *
  * $Id: autopackage.php 41 2005-09-19 14:43:27Z argh $
  *
- * @author		Stephan Schmidt <schst@php-tools.net>
- * @package		patError
- * @subpackage	Tools
+ * @author      Stephan Schmidt <schst@php-tools.net>
+ * @package     patError
+ * @subpackage  Tools
  */
 
 $baseVersion = '1.102';
 
 /**
  * uses PackageFileManager
- */ 
+ */
 require_once 'PEAR/PackageFileManager.php';
 
 /**
  * current version
  */
-$version	= $baseVersion . 'dev' . $argv[1];
-$dir		= dirname( __FILE__ );
+$version    = $baseVersion . 'dev' . $argv[1];
+$dir        = dirname(__FILE__);
 
 /**
  * current state
@@ -66,7 +66,7 @@ $result = $package->setOptions(array(
     'baseinstalldir'    => 'pat',
     'packagedirectory'  => $dir,
     'dir_roles'         => array(
-								 'docs' => 'doc',
+                                 'docs' => 'doc',
                                  'examples' => 'doc',
                                  'tests' => 'test',
                                  )
@@ -89,4 +89,3 @@ if (PEAR::isError($result)) {
     echo $result->getMessage();
     die();
 }
-?>

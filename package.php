@@ -4,15 +4,15 @@
  *
  * $Id: package.php 41 2005-09-19 14:43:27Z argh $
  *
- * @author		Stephan Schmidt <schst@php-tools.net>
- * @author		gERD Schaufelberger <gerd@php-tools.net>
- * @package		patError
- * @subpackage	Tools
+ * @author      Stephan Schmidt <schst@php-tools.net>
+ * @author      gERD Schaufelberger <gerd@php-tools.net>
+ * @package     patError
+ * @subpackage  Tools
  */
 
 /**
  * uses PackageFileManager
- */ 
+ */
 require_once 'PEAR/PackageFileManager.php';
 
 /**
@@ -61,7 +61,7 @@ $result = $package->setOptions(array(
     'baseinstalldir'    => 'pat',
     'packagedirectory'  => './',
     'dir_roles'         => array(
-								 'docs' => 'doc',
+                                 'docs' => 'doc',
                                  'examples' => 'doc',
                                  'tests' => 'test',
                                  )
@@ -88,4 +88,3 @@ if (PEAR::isError($result)) {
     echo $result->getMessage();
     die();
 }
-?>
