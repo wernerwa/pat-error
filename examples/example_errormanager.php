@@ -5,8 +5,6 @@
  * This example demonstrates how to set the error handling for
  * different error levels.
  *
- * $Id: example_errormanager.php 21 2004-04-17 20:27:33Z schst $
- *
  * @access      public
  * @package     patError
  * @subpackage  Examples

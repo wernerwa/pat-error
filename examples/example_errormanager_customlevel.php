@@ -4,8 +4,6 @@
  *
  * This example demonstrates how to add custom error levels
  *
- * $Id: example_errormanager_customlevel.php 21 2004-04-17 20:27:33Z schst $
- *
  * @access      public
  * @package     patError
  * @subpackage  Examples

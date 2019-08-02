@@ -2,8 +2,6 @@
 /**
  * package.xml generation file for patForms
  *
- * $Id: package.php 41 2005-09-19 14:43:27Z argh $
- *
  * @author      Stephan Schmidt <schst@php-tools.net>
  * @author      gERD Schaufelberger <gerd@php-tools.net>
  * @package     patError

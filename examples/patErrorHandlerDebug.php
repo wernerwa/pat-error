@@ -4,8 +4,6 @@
  *
  * Provides the pat-teams favourite error handlers.
  *
- * $Id: patErrorHandlerDebug.php 40 2005-05-07 08:30:24Z argh $
- *
  * @access      public
  * @package     patError
  * @subpackage  Debug

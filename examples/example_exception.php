@@ -1,8 +1,6 @@
 <?php
 /**
  * Simple example for patError and patErrorManager
- *
- * $Id: example_exception.php 36 2005-03-06 12:37:47Z schst $
  * @author      Stephan Schmidt <schst@php-tools.net
  * @copyright   PHP Application Tools
  * @package     patError
