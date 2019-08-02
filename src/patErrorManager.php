@@ -68,7 +68,7 @@ $GLOBALS['_pat_errorExpects']   =   array();
  *
  * @static
  * @package patError
- * @version 0.3
+ * @version 1.1
  * @author  gERD Schaufelberger <gerd@php-tools.net>
  * @author  Stephan Schmidt <schst@php-tools.net>
  * @license LGPL
