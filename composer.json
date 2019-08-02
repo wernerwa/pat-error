@@ -2,7 +2,7 @@
 	"name": "wernerwa/pat-error",
 	"description": "patError - simple and powerful error managemet system.",
 	"type": "library",
-	"license": "LGPL",
+	"license": "LGPL-3.0-or-later",
 	"authors": [
 		{
 			"name": "Stephan Schmidt",
