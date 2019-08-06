@@ -8,8 +8,6 @@
  *
  * @author      Stephan Schmidt <schst@php-tools.net>
  * @author      gERD Schaufelberger <gerd@php-tools.net>
- * @package     patSessoin
- * @subpackage  Tools
  */
 
 /**
@@ -66,52 +64,51 @@ $description = <<<EOT
 patError - simple and powerful error managemet system. Inspired by error handling of PEAR.
 EOT;
 
-$options    =   array (
+$options = array(
     'license'           => 'LGPL',
     'filelistgenerator' => 'svn',
-    'ignore'            => array( 'package.php', 'autopackage.php', 'package-config.php', 'package.xml'),
+    'ignore'            => array('package.php', 'autopackage.php', 'package-config.php', 'package.xml'),
     'simpleoutput'      => true,
     'baseinstalldir'    => 'pat',
     'packagedirectory'  => './',
     'dir_roles'         => array(
-                                 'docs' => 'doc',
+                                 'docs'     => 'doc',
                                  'examples' => 'doc',
-                                 'tests' => 'test',
-                                 )
+                                 'tests'    => 'test',
+                                 ),
     );
 
-$license    =   array(
+$license = array(
         'name'  => 'LGPL',
-        'url'   =>  'http://www.gnu.org/copyleft/lesser.txt'
+        'url'   => 'http://www.gnu.org/copyleft/lesser.txt',
     );
 
-$maintainer     =   array();
-$maintainer[]   =   array(
+$maintainer = array();
+$maintainer[] = array(
         'role'      => 'lead',
         'handle'    => 'schst',
         'name'      => 'Stephan Schmidt',
         'email'     => 'schst@php-tools.net',
-        'active'    => 'yes'
+        'active'    => 'yes',
 );
-$maintainer[]   =   array(
+$maintainer[] = array(
         'role'      => 'lead',
         'handle'    => 'gerd',
         'name'      => 'gERD Schaufelberger',
         'email'     => 'gerd@php-tools.net',
-        'active'    => 'yes'
+        'active'    => 'yes',
 );
-$maintainer[]   =   array(
+$maintainer[] = array(
         'role'      => 'developer',
         'handle'    => 'argh',
         'name'      => 'Sebastian Mordziol',
         'email'     => 'argh@php-tools.net',
-        'active'    => 'yes'
+        'active'    => 'yes',
 );
 
-$dependency     =   array();
-$channel    =   'pear.php-tools.net';
-$require    =   array(
-    'php'               =>  '5.0.0',
-    'pear_installer'    => '1.4.0'
+$dependency = array();
+$channel = 'pear.php-tools.net';
+$require = array(
+    'php'               => '5.0.0',
+    'pear_installer'    => '1.4.0',
 );
-?>
