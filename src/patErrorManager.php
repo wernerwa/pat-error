@@ -82,12 +82,10 @@ class patErrorManager
      * method for checking whether the return value of a pat application method is a pat
      * error object.
      *
-     * @static
-     * @access  public
      * @param   mixed   &$object
      * @return  boolean $result True if argument is a patError-object, false otherwise.
      */
-    public function isError(&$object)
+    public static function isError(&$object)
     {
         if (!is_object($object)) {
             return false;
@@ -104,8 +102,6 @@ class patErrorManager
      * wrapper for the {@link raise()} method where you do not have to specify the
      * error level - a {@link patError} object with error level E_ERROR will be returned.
      *
-     * @static
-     * @access  public
      * @param   string  $code   The application-internal error code for this error
      * @param   string  $msg    The error message, which may also be shown the user if need be.
      * @param   mixed   $info   Optional: Additional error information (usually only developer-relevant information that the user should never see, like a database DSN).
@@ -113,7 +109,7 @@ class patErrorManager
      * @see     raise()
      * @see     patError
      */
-    public function &raiseError($code, $msg, $info = null)
+    public static function &raiseError($code, $msg, $info = null)
     {
         $error = patErrorManager::raise(E_ERROR, $code, $msg, $info);
         return $error;
@@ -123,8 +119,6 @@ class patErrorManager
      * wrapper for the {@link raise()} method where you do not have to specify the
      * error level - a {@link patError} object with error level E_WARNING will be returned.
      *
-     * @static
-     * @access  public
      * @param   string  $code   The application-internal error code for this error
      * @param   string  $msg    The error message, which may also be shown the user if need be.
      * @param   mixed   $info   Optional: Additional error information (usually only developer-relevant information that the user should never see, like a database DSN).
@@ -132,7 +126,7 @@ class patErrorManager
      * @see     raise()
      * @see     patError
      */
-    public function &raiseWarning($code, $msg, $info = null)
+    public static function &raiseWarning($code, $msg, $info = null)
     {
         $error = patErrorManager::raise(E_WARNING, $code, $msg, $info);
         return $error;
@@ -142,8 +136,6 @@ class patErrorManager
      * wrapper for the {@link raise()} method where you do not have to specify the
      * error level - a {@link patError} object with error level E_NOTICE will be returned.
      *
-     * @static
-     * @access  public
      * @param   string  $code   The application-internal error code for this error
      * @param   string  $msg    The error message, which may also be shown the user if need be.
      * @param   mixed   $info   Optional: Additional error information (usually only developer-relevant information that the user should never see, like a database DSN).
@@ -151,7 +143,7 @@ class patErrorManager
      * @see     raise()
      * @see     patError
      */
-    public function &raiseNotice($code, $msg, $info = null)
+    public static function &raiseNotice($code, $msg, $info = null)
     {
         $error = patErrorManager::raise(E_NOTICE, $code, $msg, $info);
         return $error;
@@ -254,15 +246,13 @@ class patErrorManager
      * - E_ERROR | E_WARNING = Set the handling for errors and warnings
      * - E_ALL ^ E_ERROR = Set the handling for all levels except errors
      *
-     * @static
-     * @access  public
      * @param   int     $level      The error level for which to set the error handling
      * @param   string  $mode       The mode to use for the error handling.
      * @param   mixed   $options    Optional: Any options needed for the given mode.
      * @return  mixed   $result     True on success, or a patError object if failed.
      * @see     getErrorHandling()
      */
-    public function setErrorHandling($level, $mode, $options = null)
+    public static function setErrorHandling($level, $mode, $options = null)
     {
         $levels =   $GLOBALS['_pat_errorLevels'];
 
@@ -375,12 +365,10 @@ class patErrorManager
     /**
      * add error codes to be ingored
      *
-     * @static
-     * @access public
      * @param mixed $codes either an array of error code or a single code that will be ignored in future
      * @return boolean $result true on success
      */
-    public function addIgnore($codes)
+    public static function addIgnore($codes)
     {
         if (!is_array($codes)) {
             $codes  =   array( $codes );
@@ -395,12 +383,9 @@ class patErrorManager
     /**
      * removeIgnore
      *
-     *
-     * @static
-     * @access public
      * @return boolean $result true on success
      */
-    public function removeIgnore($codes)
+    public static function removeIgnore($codes)
     {
         if (!is_array($codes)) {
             $codes  =   array( $codes );
@@ -424,11 +409,9 @@ class patErrorManager
     /**
      * recieve all registerd error codes that will be ignored
      *
-     * @static
-     * @access public
      * @return array $codes list of error codes
      */
-    public function getIgnore()
+    public static function getIgnore()
     {
         return $GLOBALS['_pat_errorIgnores'];
     }
@@ -436,11 +419,9 @@ class patErrorManager
     /**
      * empty list of errors to be ignored
      *
-     * @static
-     * @access public
      * @return boolean $result true on success
      */
-    public function clearIgnore()
+    public static function clearIgnore()
     {
         $GLOBALS['_pat_errorIgnores']   =   array();
         return true;
@@ -449,12 +430,10 @@ class patErrorManager
     /**
      * add expected errors to stack
      *
-     * @static
-     * @access public
      * @param mixed $codes either an array of error code or a single code that will be ignored in future
      * @return boolean $result true on success
      */
-    public function pushExpect($codes)
+    public static function pushExpect($codes)
     {
         if (!is_array($codes)) {
             $codes  =   array( $codes );
@@ -468,11 +447,9 @@ class patErrorManager
     /**
      * remove top of error-codes from stack
      *
-     * @static
-     * @access public
      * @return boolean $result true on success
      */
-    public function popExpect()
+    public static function popExpect()
     {
         if (empty($GLOBALS['_pat_errorExpects'])) {
             return false;
@@ -485,11 +462,9 @@ class patErrorManager
     /**
      * recieve all registerd error codes that will be ignored
      *
-     * @static
-     * @access public
      * @return array $codes list of error codes
      */
-    public function getExpect()
+    public static function getExpect()
     {
         return $GLOBALS['_pat_errorExpects'];
     }
@@ -497,11 +472,9 @@ class patErrorManager
     /**
      * empty list of errors to be ignored
      *
-     * @static
-     * @access public
      * @return boolean $result true on success
      */
-    public function clearExpect()
+    public static function clearExpect()
     {
         $GLOBALS['_pat_errorExpects']   =   array();
         return true;
