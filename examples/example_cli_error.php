@@ -1,9 +1,9 @@
-#!/usr/local/bin/php
+#!/usr/bin/php
 <?php
 /**
  * Simple example for patError and patErrorManager
  *
- * $Id: example_cli_error.php 21 2004-04-17 20:27:33Z schst $
+ * $Id: example_cli_error.php 43 2008-07-19 16:39:17Z schst $
  * @author		gERD Schaufelberger <gerd@php-tools.net>
  * @copyright	PHP Application Tools
  * @package		patError
@@ -21,7 +21,7 @@
 	 * patErrorManagerDebug - just an example
 	 */
  	include_once 'patErrorHandlerDebug.php';
-	$errorHandler	=&	new	patErrorHandlerDebug;
+	$errorHandler	=	new	patErrorHandlerDebug;
 	
 	// setup handler for each error-level
 	patErrorManager::setErrorHandling( E_ERROR, 'die' );

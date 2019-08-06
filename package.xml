@@ -1,102 +1,97 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
-<package version="1.0" packagerversion="1.4.0a4">
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
  <name>patError</name>
+ <channel>pear.php-tools.net</channel>
  <summary>Simple and powerful error management package.</summary>
- <description>patError - simple and powerful error managemet system. Inspired by error handling of PEAR.
- </description>
- <maintainers>
-  <maintainer>
-   <user>schst</user>
-   <name>Stephan Schmidt</name>
-   <email>schst@php-tools.net</email>
-   <role>lead</role>
-  </maintainer>
-  <maintainer>
-   <user>gerd</user>
-   <name>Gerd Schaufelberger</name>
-   <email>gerd@php-tools.net</email>
-   <role>lead</role>
-  </maintainer>
-  <maintainer>
-   <user>argh</user>
-   <name>Sebastian Mordziol</name>
-   <email>argh@php-tools.net</email>
-   <role>developer</role>
-  </maintainer>
-  </maintainers>
- <release>
-  <version>1.1.0</version>
-  <date>2005-03-06</date>
-  <license>LGPL</license>
-  <state>stable</state>
-  <notes>Changes since 1.0.2:
-- allow strings in error codes (gERD)
-- fixed pushExpect() and popExpect() (schst)
-- fix PHP5 compatibility (argh)
-- added new handler to throw exceptions (schst)
-  </notes>
-  <deps>
-   <dep type="php" rel="ge" version="4.3.0" optional="no"/>
-  </deps>
-  <filelist>
-   <dir name="/" baseinstalldir="pat">
-    <dir name="docs">
-     <file role="doc" name="errorcodes.txt"/>
-     <file role="doc" name="install.txt"/>
-     <file role="doc" name="readme.txt"/>
-    </dir> <!-- /docs -->
-    <dir name="examples">
-     <file role="doc" name="example_cli_error.php"/>
-     <file role="doc" name="example_error.php"/>
-     <file role="doc" name="example_errormanager.php"/>
-     <file role="doc" name="example_errormanager_customlevel.php"/>
-     <file role="doc" name="example_exception.php"/>
-     <file role="doc" name="example_expect.php"/>
-     <file role="doc" name="example_ignore.php"/>
-     <file role="doc" name="patErrorHandlerDebug.php"/>
-    </dir> <!-- /examples -->
-    <file role="php" name="patError.php"/>
-    <file role="php" name="patErrorManager.php"/>
-   </dir> <!-- / -->
-  </filelist>
- </release>
+ <description>patError - simple and powerful error managemet system. Inspired by error handling of PEAR.</description>
+ <lead>
+  <name>Stephan Schmidt</name>
+  <user>schst</user>
+  <email>schst@php-tools.net</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>gERD Schaufelberger</name>
+  <user>gerd</user>
+  <email>gerd@php-tools.net</email>
+  <active>yes</active>
+ </lead>
+ <developer>
+  <name>Sebastian Mordziol</name>
+  <user>argh</user>
+  <email>argh@php-tools.net</email>
+  <active>yes</active>
+ </developer>
+ <date>2008-07-19</date>
+ <time>19:25:39</time>
+ <version>
+  <release>1.2.0</release>
+  <api>1.2.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.gnu.org/copyleft/lesser.txt">LGPL</license>
+ <notes>Changes since 1.1.0:
+- Remove PHP4 compatibility (schst)
+- Got rid of all E_DEPRECATED and E_NOTICE messages (schst)
+- Got rid of all E_STRICT messages (schst)
+- Replaced usage of global variables with static class properties (schst)
+- Adjusted to PEAR coding guidelines (schst)</notes>
+ <contents>
+  <dir baseinstalldir="pat" name="/">
+   <dir name="docs">
+    <file name="errorcodes.txt" role="doc" />
+    <file name="install.txt" role="doc" />
+    <file name="readme.txt" role="doc" />
+   </dir> <!-- /docs -->
+   <dir name="examples">
+    <file name="example_cli_error.php" role="doc" />
+    <file name="example_error.php" role="doc" />
+    <file name="example_errormanager_customlevel.php" role="doc" />
+    <file name="example_exception.php" role="doc" />
+    <file name="example_expect.php" role="doc" />
+    <file name="example_ignore.php" role="doc" />
+    <file name="patErrorHandlerDebug.php" role="doc" />
+   </dir> <!-- /examples -->
+   <file name="autopackage2.php" role="php" />
+   <file name="patError.php" role="php" />
+   <file name="patErrorManager.php" role="php" />
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
  <changelog>
-   <release>
-    <version>1.0</version>
-    <date>2004-02-10</date>
-    <license>PHP License</license>
-    <state>beta</state>
-    <notes>first public release
-    </notes>
-   </release>
-   <release>
-    <version>1.0.1</version>
-    <date>2004-03-31</date>
-    <license>PHP License</license>
-    <state>beta</state>
-    <notes>added cli-compatible error-handling
-    </notes>
-   </release>
-   <release>
-    <version>1.0.2</version>
-    <date>2004-05-04</date>
-    <license>PHP License</license>
-    <state>beta</state>
-    <notes>new features for ignoring errors
-    </notes>
-   </release>
-   <release>
-    <version>1.1.0</version>
-    <date>2005-03-06</date>
-    <license>LGPL</license>
-    <state>stable</state>
-    <notes>Changes since 1.0.2:
-- allow strings in error codes (gERD)
-- fixed pushExpect() and popExpect() (schst)
-- fix PHP5 compatibility (argh)
-- added new handler to throw exceptions (schst)
-    </notes>
-   </release>
+  <release>
+   <version>
+    <release>1.2.0</release>
+    <api>1.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-07-19</date>
+   <license uri="http://www.gnu.org/copyleft/lesser.txt">LGPL</license>
+   <notes>Changes since 1.1.0:
+- Remove PHP4 compatibility (schst)
+- Got rid of all E_DEPRECATED and E_NOTICE messages (schst)
+- Got rid of all E_STRICT messages (schst)
+- Replaced usage of global variables with static class properties (schst)
+- Adjusted to PEAR coding guidelines (schst)</notes>
+  </release>
  </changelog>
 </package>
