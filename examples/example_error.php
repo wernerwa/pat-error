@@ -4,11 +4,11 @@
  *
  * $Id: example_error.php 43 2008-07-19 16:39:17Z schst $
  *
- * @author		gERD Schaufelberger <gerd@php-tools.net>
- * @copyright	PHP Application Tools
- * @license		LGPL, see license.txt for details
+ * @author      gERD Schaufelberger <gerd@php-tools.net>
+ * @copyright   PHP Application Tools
+ * @license     LGPL, see license.txt for details
  *
- * @see		http://www.php-tools.net
+ * @see     http://www.php-tools.net
  */
 
     /**
@@ -50,9 +50,9 @@
 
     $bar = foo();
 
-    echo	'<pre>';
+    echo '<pre>';
     print_r($bar);
-    echo	'</pre>';
+    echo '</pre>';
 
     exit;
 

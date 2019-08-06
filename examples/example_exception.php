@@ -4,11 +4,11 @@
  *
  * $Id: example_exception.php 36 2005-03-06 12:37:47Z schst $
  *
- * @author		Stephan Schmidt <schst@php-tools.net
- * @copyright	PHP Application Tools
- * @license		LGPL, see license.txt for details
+ * @author      Stephan Schmidt <schst@php-tools.net
+ * @copyright   PHP Application Tools
+ * @license     LGPL, see license.txt for details
  *
- * @see		http://www.php-tools.net
+ * @see     http://www.php-tools.net
  */
 
 /**

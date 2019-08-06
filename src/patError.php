@@ -3,13 +3,6 @@
  * patError error object used by the patFormsError manager as error messages
  * container for precise error management.
  *
- *	$Id: patError.php 45 2008-07-19 17:08:08Z schst $
- */
-
-/**
- * patError error object used by the patFormsError manager as error messages
- * container for precise error management.
- *
  * $Id: patError.php 45 2008-07-19 17:08:08Z schst $
  *
  * @version       0.3

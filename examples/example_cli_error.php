@@ -5,11 +5,11 @@
  *
  * $Id: example_cli_error.php 43 2008-07-19 16:39:17Z schst $
  *
- * @author		gERD Schaufelberger <gerd@php-tools.net>
- * @copyright	PHP Application Tools
- * @license		LGPL, see license.txt for details
+ * @author      gERD Schaufelberger <gerd@php-tools.net>
+ * @copyright   PHP Application Tools
+ * @license     LGPL, see license.txt for details
  *
- * @see		http://www.php-tools.net
+ * @see         http://www.php-tools.net
  */
 
     /**
@@ -21,7 +21,7 @@
      * patErrorManagerDebug - just an example
      */
     include_once 'patErrorHandlerDebug.php';
-    $errorHandler = new	patErrorHandlerDebug();
+    $errorHandler = new patErrorHandlerDebug();
 
     // setup handler for each error-level
     patErrorManager::setErrorHandling(E_ERROR, 'die');

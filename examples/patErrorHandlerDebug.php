@@ -12,15 +12,15 @@
 /**
  * custom patErrorManager handler for the callback error handling mode
  *
- * @author		gERD Schaufelberger <gerd@php-tools.net>
- * @author		Stephan Schmidt <schst@php-tools.net>
- * @author 		Sebastian 'The Argh' Mordziol <argh@php-tools.net>
+ * @author      gERD Schaufelberger <gerd@php-tools.net>
+ * @author      Stephan Schmidt <schst@php-tools.net>
+ * @author      Sebastian 'The Argh' Mordziol <argh@php-tools.net>
  *
- * @version		0.1
+ * @version     0.1
  *
- * @license		LGPL
+ * @license     LGPL
  *
- * @see		http://www.php-tools.net
+ * @see     http://www.php-tools.net
  */
 class patErrorHandlerDebug
 {
