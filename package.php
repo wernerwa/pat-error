@@ -2,8 +2,6 @@
 /**
  * package.xml generation file for patForms
  *
- * $Id: package.php 48 2008-07-19 17:29:01Z schst $
- *
  * @author      Stephan Schmidt <schst@php-tools.net>
  * @author      gERD Schaufelberger <gerd@php-tools.net>
  */

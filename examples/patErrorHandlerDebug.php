@@ -3,8 +3,6 @@
  * custom patErrorManager handler for the callback error handling mode
  *
  * Provides the pat-teams favourite error handlers.
- *
- * $Id: patErrorHandlerDebug.php 45 2008-07-19 17:08:08Z schst $
  */
  $GLOBALS['_pat_errorsCounter'] = 0;
  $GLOBALS['_pat_errorStylesPrinted'] = false;
@@ -68,10 +66,10 @@ class patErrorHandlerDebug
      *
      * The output has been inspired by Derick Rethan's xDebug.
      *
-     * @author    Stephan Schmidt <schst@php-tools.net>
+     * @author  Stephan Schmidt <schst@php-tools.net>
      * @static
      *
-     * @param    object        error object
+     * @param   object      error object
      *
      * @return object error object
      *
@@ -87,7 +85,7 @@ class patErrorHandlerDebug
             $error->getInfo(),
             $error->getFile(),
             $error->getLine()
-            );
+        );
 
         $backtrace = $error->getBacktrace();
         if (is_array($backtrace)) {
@@ -124,7 +122,7 @@ class patErrorHandlerDebug
         $level = $error->getLevel();
 
         if ($level != E_ERROR) {
-            return    $error;
+            return  $error;
         }
 
         exit();
@@ -144,10 +142,10 @@ class patErrorHandlerDebug
      * The output has been inspired by Schst's debug, updated for a
      * designer's eye.
      *
-     * @author    Sebastian Mordziol <argh@php-tools.net>
+     * @author  Sebastian Mordziol <argh@php-tools.net>
      * @static
      *
-     * @param    object        error object
+     * @param   object      error object
      *
      * @return object error object
      */

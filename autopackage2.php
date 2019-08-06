@@ -6,7 +6,7 @@
  * automatically create a package that can be
  * installed via the PEAR installer.
  *
- * $Id: autopackage2.php 462 2007-06-12 21:15:34Z gerd $
+ * 2007-06-12
  *
  * @author      Stephan Schmidt <schst@php-tools.net>
  * @author      gERD Schaufelberger <gerd@php-tools.net>

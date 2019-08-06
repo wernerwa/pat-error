@@ -3,16 +3,14 @@
  * patError error object used by the patFormsError manager as error messages
  * container for precise error management.
  *
- * $Id: patError.php 45 2008-07-19 17:08:08Z schst $
+ * @version     0.3
  *
- * @version       0.3
+ * @author      gERD Schaufelberger <gerd@php-tools.net>
+ * @author      Sebastian Mordziol <argh@php-tools.net>
+ * @author      Stephan Schmidt <schst@php-tools.net>
+ * @license     LGPL
  *
- * @author        gERD Schaufelberger <gerd@php-tools.net>
- * @author        Sebastian Mordziol <argh@php-tools.net>
- * @author        Stephan Schmidt <schst@php-tools.net>
- * @license       LGPL
- *
- * @see          http://www.php-tools.net
+ * @see         http://www.php-tools.net
  */
 class patError
 {
@@ -111,7 +109,7 @@ class patError
                               'raiseerror',
                               'raisewarning',
                               'raisenotice',
-                             );
+        );
 
         $this->level = $level;
         $this->code = $code;
@@ -154,9 +152,9 @@ class patError
      * returns the error level of the error - corresponds to the PHP
      * error levels (E_ALL, E_NOTICE...)
      *
-     * @return int $level    The error level
+     * @return int $level  The error level
      *
-     * @see        $level
+     * @see     $level
      */
     public function getLevel()
     {
@@ -179,9 +177,9 @@ class patError
      * retrieves the additional error information (information usually
      * only relevant for developers)
      *
-     * @return mixed $info    The additional information
+     * @return mixed $info The additional information
      *
-     * @see        $info
+     * @see     $info
      */
     public function getInfo()
     {
@@ -221,7 +219,7 @@ class patError
      *
      * @return string filename
      *
-     * @see       $file
+     * @see     $file
      */
     public function getFile()
     {

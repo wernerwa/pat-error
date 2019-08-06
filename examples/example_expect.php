@@ -2,8 +2,6 @@
 /**
  * Simple example for patError and patErrorManager
  *
- * $Id: example_expect.php 21 2004-04-17 20:27:33Z schst $
- *
  * @author      gERD Schaufelberger <gerd@php-tools.net>
  * @copyright   PHP Application Tools
  * @license     LGPL, see license.txt for details

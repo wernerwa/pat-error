@@ -3,8 +3,6 @@
  * patErrorManager main error management class used by pat tools for the
  * application-internal error management. Creates patError objects for
  * any errors for precise error management.
- *
- * $Id: patErrorManager.php 46 2008-07-19 17:15:44Z schst $
  */
 
 /**

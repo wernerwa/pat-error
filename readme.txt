@@ -5,7 +5,7 @@
  * you should try some PEAR classes available at
  * http://pear.php.net
  * 
- * $Id: readme.txt 33 2004-09-25 08:57:01Z gerd $
+ * 2004-09-25
  *
  * @access      public
  * @package     patError

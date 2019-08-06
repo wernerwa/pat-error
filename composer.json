@@ -1,0 +1,29 @@
+{
+	"name": "wernerwa/pat-error",
+	"description": "patError - simple and powerful error managemet system.",
+	"type": "library",
+	"license": "LGPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Stephan Schmidt",
+			"email": "schst@php-tools.net"
+		}, {
+			"name": "Gerd Schaufelberger",
+			"email": "gerd@php-tools.net"
+		}, {
+			"name": "Sebastian Mordziol",
+			"email": "argh@php-tools.net"
+		}, {
+			"name": "Werner Wank",
+			"email": "14849239+wernerwa@users.noreply.github.com"
+		}
+	],
+	"autoload": {
+		"psr-0": {
+			"patError": "src/"
+		}
+	},
+	"require": {
+		"php": ">=4.0.0"
+	}
+}

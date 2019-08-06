@@ -3,8 +3,6 @@
 /**
  * Simple example for patError and patErrorManager
  *
- * $Id: example_cli_error.php 43 2008-07-19 16:39:17Z schst $
- *
  * @author      gERD Schaufelberger <gerd@php-tools.net>
  * @copyright   PHP Application Tools
  * @license     LGPL, see license.txt for details
@@ -66,4 +64,4 @@
             'Don\'t mind at all, this is just an example'
         );
     }
-?>
+    ?>

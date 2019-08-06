@@ -4,9 +4,7 @@
  *
  * This example demonstrates how to add custom error levels
  *
- * $Id: example_errormanager_customlevel.php 46 2008-07-19 17:15:44Z schst $
- *
- * @author  Stephan Schmidt <argh@php-tools.net>
+ * @author      Stephan Schmidt <argh@php-tools.net>
  * @license     LGPL, see license.txt for details
  *
  * @see     http://www.php-tools.net
